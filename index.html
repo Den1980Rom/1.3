@@ -4,54 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>CPS ремонт компьютерной техники</title>
   </head>
-  <body>
-    <header class="header">
-      <button class="header__btn" type="button">
-        <img src="img/burger.svg" alt="Кнопка меню" class="header__menu" />
-      </button>
-      <a href="" class="logo"
-        ><img src="img/logo.svg" alt="Логотип компании" class="logo__img"
-      /></a>
-      <a href="#" class="check"
-        ><img src="img/repair.svg" alt="Кнопка ремонта" class="check__img"
-      /></a>
-      <a href="#" class="search"
-        ><img
-          src="img/checkstatus.svg"
-          alt="Кнопка проверки статуса"
-          class="search__img"
-      /></a>
-    </header>
 
-    <main class="main">
-      <h1 class="main__title">Услуги и сервисы</h1>
-      <nav class="main__nav">
-        <a href="#" class="main__items">Ремонтируемые бренды</a>
-        <a href="#" class="main__items">Ремонтируемые устройства</a>
-        <a href="#" class="main__items">Цены на услуги</a>
-        <a href="#" class="main__items">Адреса сервисных центров</a>
-        <a href="#" class="main__items">Специальные цены</a>
-        <a href="#" class="main__items">Отзывы</a>
-      </nav>
-      <p class="main__text">
-        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-        гарантией производителя.
-      </p>
-      <p class="main__text">
-        Мы успешно работаем с 1992 года и заслужили репутацию надежного
-        партнера, что подтверждает большое количество постоянных клиентов. Мы
-        гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
-        советуют нас родным и близким.
-      </p>
-      <button class="main__btn" type="button">Читать далее</button>
-      <img
-        src="img/hours.png"
-        alt="Режим работы с логотипом"
-        class="main__img"
-      />
-    </main>
+  <body>
+    <div class="container">
+      <header class="header">
+        <button class="header__btn" type="button">
+          <img src="img/burger.svg" alt="Кнопка меню" class="header__menu" />
+        </button>
+        <a class="logo"
+          ><img src="img/logo.svg" alt="Логотип компании" class="logo__img"
+        /></a>
+        <a href="#" class="check"
+          ><img src="img/repair.svg" alt="Кнопка ремонта" class="check__img"
+        /></a>
+        <a href="#" class="search"
+          ><img
+            src="img/checkstatus.svg"
+            alt="Кнопка проверки статуса"
+            class="search__img"
+        /></a>
+      </header>
+
+      <main class="main">
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <nav class="slide-menu">
+          <a href="#" class="slide-menu__items">Ремонтируемые бренды</a>
+          <a href="#" class="slide-menu__items">Ремонтируемые устройства</a>
+          <a href="#" class="slide-menu__items">Цены на услуги</a>
+          <a href="#" class="slide-menu__items">Адреса сервисных центров</a>
+          <a href="#" class="slide-menu__items">Специальные цены</a>
+          <a href="#" class="slide-menu__items">Отзывы</a>
+        </nav>
+        <section class="main__about">
+          <article class="main__article">
+            <p class="main__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="main__text">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+          </article>
+          <button class="main__btn" type="button">Читать далее</button>
+        </section>
+        <img
+          src="img/hours.png"
+          alt="Режим работы с логотипом"
+          class="main__img"
+        />
+      </main>
+    </div>
   </body>
 </html>
