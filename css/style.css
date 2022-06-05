@@ -45,33 +45,67 @@ body {
 .header {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     height: 88px;
 
     background-color: #ffffff;
 }
-
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.additional {
+    display: none;
+    margin-left: auto;
+}
 .header__btn {
     border: none;
     background: none;
 }
-.logo::after {
+.repair::before {
     content: "";
     display: inline-block;
-    margin-left: 15px;
+    margin-right: 15px;
     width: 2px;
     height: 40px;
 
-    /* vertical-align: middle; */
-    background-color: #EAEAEA;
     border: 1px solid #EAEAEA;
     border-radius: 1px;
 }
-
+.margin {
+    margin-right: 15px;
+}
 .main {
     background-color: #F8F8F8;
-    height: 590px;
-    padding-top: 24px;
+    padding-top: 1px;
+}
+.main__big-size {
+    display: none;
+    align-items: center;
+
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+}
+.main__repair {
+    position: relative;
+    margin-right: 80px;
+}
+.main__repair::after {
+    content: url(../img/repair.svg);
+    position: absolute;
+    top: -10px;
+    right: -50px;
+}
+.main__check {
+    position: relative;
+    margin-right: 80px;
+}
+.main__check::after {
+    content: url(../img/checkstatus.svg);
+    position: absolute;
+    top: -10px;
+    right: -50px;
 }
 .main__title {
     font-size: 28px;
@@ -90,14 +124,20 @@ body {
     border-radius: 0 4px 4px 0;
     margin-right: 12px;
 }
+
+.second {
+    display: none;
+}
+
 .slide-menu {
     display: flex;  
     overflow-x: auto;
 }
+
 .slide-menu::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+    display: none;
 }
+
 .slide-menu__items {
     padding: 8px 15px;
     white-space: nowrap;
@@ -110,24 +150,29 @@ body {
     border: 2px solid transparent;
     border-radius: 6px; 
 }
+
 .slide-menu__items:hover {
     background-color: #FFFFFF;
     border-color: #B8FFEC;
 }
+
 .main__about {
     overflow: hidden;
     padding-left: 20px;
     padding-right: 5px;
 }
 .main__article {
-    height: 100px;
+    height: 90px;
     overflow: hidden;
     margin-bottom: 16px;
+
+    line-height: 20px;
 }
+
 .main__btn {
     background: none;
     border: none;
-    align-self: start;
+    /* align-self: start; */
     margin-bottom: 16px;
     
 
@@ -139,12 +184,93 @@ body {
 .main__btn::before {
     content: url(../img/expand.svg); 
     vertical-align: middle;
-    margin-left: 8px;
+    /* margin-left: 8px; */
 }
 .main__img {
     width: 100%;
 }
 
-@media (min width:768px) {
+@media (min-width:768px) {
+    .container {
+    width: 769px;
+    }
+    .header {
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+    .additional {
+        display: flex;
+        border-right: 2px solid #EAEAEA
+    }
+    .header__btn::after {
+        content: "";
+        display: inline-block;
+        margin-right: 15px;
+        width: 2px;
+        height: 40px;
     
+        background-color: #EAEAEA;
+        border: 1px solid #EAEAEA;
+        border-radius: 1px;
+    }
+    .repair {
+        margin-left: 15px;
+    }
+    .repair::before {
+        display: none;
+    }
+    .main__title {
+        visibility: hidden;
+    }
+    .main__article {
+        height: 150px;
+    }
+    .main__text {
+        width: 310px;        
+    }
+    .main__img {
+        width: 360px;
+        border-radius: 10px;
+    }
+    .main__container {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 30px;
+        padding-right: 25px;
+    }
+    .second {
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1120px) {
+    .container {
+        width: 1120px;
+    }
+    .header {
+        display: none;
+    }
+    .main__title {
+        visibility: visible;
+    }
+    .second {
+        display: none;
+    }
+    .main__big-size {
+        display: flex;
+    }
+    .slide-menu {
+        flex-wrap: wrap;
+    }
+    .main__article {
+        height: 170px;
+    }
+    .main__text {
+        width: 490px;
+    }
+    .main__img {
+        width: 532px;
+    }
 }

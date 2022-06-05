@@ -12,54 +12,86 @@
   <body>
     <div class="container">
       <header class="header">
-        <button class="header__btn" type="button">
-          <img src="img/burger.svg" alt="Кнопка меню" class="header__menu" />
-        </button>
-        <a class="logo"
-          ><img src="img/logo.svg" alt="Логотип компании" class="logo__img"
-        /></a>
-        <a href="#" class="check"
-          ><img src="img/repair.svg" alt="Кнопка ремонта" class="check__img"
-        /></a>
-        <a href="#" class="search"
-          ><img
-            src="img/checkstatus.svg"
-            alt="Кнопка проверки статуса"
-            class="search__img"
-        /></a>
+        <div class="header__container">
+          <button class="header__btn" type="button">
+            <img
+              src="img/burger.svg"
+              alt="Кнопка меню"
+              class="header__menu margin"
+            />
+          </button>
+          <a class="logo"
+            ><img
+              src="img/logo.svg"
+              alt="Логотип компании"
+              class="logo__img margin"
+          /></a>
+        </div>
+        <div class="header__container additional">
+          <a href="tel:+795123456789" class="phone margin"
+            ><img src="img/call.svg" alt="Звонок" class="phone__img"
+          /></a>
+          <a href="mailto: abs@abs.com" class="mail margin"
+            ><img src="img/chat.svg" alt="Написать нам" class="mail__img"
+          /></a>
+          <a href="#" class="profile margin"
+            ><img src="img/profile.svg" alt="Профиль" class="profile__img"
+          /></a>
+        </div>
+        <div class="header__container">
+          <a href="#" class="repair margin"
+            ><img src="img/repair.svg" alt="Кнопка ремонта" class="check__img"
+          /></a>
+          <a href="#" class="check margin"
+            ><img
+              src="img/checkstatus.svg"
+              alt="Кнопка проверки статуса"
+              class="search__img"
+          /></a>
+        </div>
       </header>
 
       <main class="main">
-        <h1 class="main__title">Услуги и сервисы</h1>
+        <div class="main__container">
+          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__big-size">
+            <a href="#" class="main__repair margin">Оставить заявку</a>
+            <a href="#" class="main__check margin">Статус ремонта</a>
+          </div>
+        </div>
         <nav class="slide-menu">
           <a href="#" class="slide-menu__items">Ремонтируемые бренды</a>
+          <a href="#" class="slide-menu__items">Дополнительные услуги</a>
           <a href="#" class="slide-menu__items">Ремонтируемые устройства</a>
           <a href="#" class="slide-menu__items">Цены на услуги</a>
           <a href="#" class="slide-menu__items">Адреса сервисных центров</a>
           <a href="#" class="slide-menu__items">Специальные цены</a>
           <a href="#" class="slide-menu__items">Отзывы</a>
         </nav>
-        <section class="main__about">
-          <article class="main__article">
-            <p class="main__text">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </p>
-            <p class="main__text">
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера, что подтверждает большое количество постоянных клиентов.
-              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.
-            </p>
-          </article>
-          <button class="main__btn" type="button">Читать далее</button>
-        </section>
-        <img
-          src="img/hours.png"
-          alt="Режим работы с логотипом"
-          class="main__img"
-        />
+        <div class="main__container">
+          <section class="main__about">
+            <article class="main__article">
+              <p class="main__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="main__text">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+            </article>
+            <button class="main__btn" type="button">Читать далее</button>
+          </section>
+          <img
+            src="img/hours.png"
+            alt="Режим работы с логотипом"
+            class="main__img"
+          />
+        </div>
+        <h2 class="main__title second">Услуги и сервисы</h2>
       </main>
     </div>
   </body>
