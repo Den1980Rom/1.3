@@ -100,6 +100,7 @@ body {
 .main__repair {
   position: relative;
   margin-right: 80px;
+  color: #1b1c21;
 }
 .main__repair::after {
   content: url(../img/repair.svg);
@@ -110,6 +111,7 @@ body {
 .main__check {
   position: relative;
   margin-right: 80px;
+  color: #1b1c21;
 }
 .main__check::after {
   content: url(../img/checkstatus.svg);
