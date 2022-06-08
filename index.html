@@ -13,7 +13,7 @@
     <div class="container">
       <header class="header">
         <div class="header__container">
-          <button class="header__btn" type="button">
+          <button class="header__btn burger" type="button">
             <img
               src="img/burger.svg"
               alt="Кнопка меню"
@@ -28,33 +28,37 @@
           /></a>
         </div>
         <div class="header__container additional">
-          <a href="tel:+795123456789" class="phone margin"
-            ><img src="img/call.svg" alt="Звонок" class="phone__img"
-          /></a>
-          <a href="mailto:abs@abs.com" class="mail margin"
-            ><img src="img/chat.svg" alt="Написать нам" class="mail__img"
-          /></a>
-          <a href="#" class="profile margin"
-            ><img src="img/profile.svg" alt="Профиль" class="profile__img"
-          /></a>
+          <button class="header__btn phone margin" type="button"><img src="img/call.svg" alt="Звонок" class="phone__img" /></button>
+          </button>
+          <button class="header__btn mail margin" type="button">
+            <img src="img/chat.svg" alt="Написать нам" class="mail__img" />
+          </button>
+          <button class="header__btn profile margin" type="button">
+            <img src="img/profile.svg" alt="Профиль" class="profile__img" />
+          </button>
         </div>
         <div class="header__container">
-          <a href="#" class="repair margin"
-            ><img src="img/repair.svg" alt="Кнопка ремонта" class="repair__img"
-          /></a>
-          <a href="#" class="check margin"
-            ><img
+          <button class="header__btn repair margin" type="button">
+            <img
+              src="img/repair.svg"
+              alt="Кнопка ремонта"
+              class="repair__img"
+            />
+          </button>
+          <button class="header__btn check margin" type="button">
+            <img
               src="img/checkstatus.svg"
               alt="Кнопка проверки статуса"
               class="check__img"
-          /></a>
+            />
+          </button>
         </div>
       </header>
 
       <main class="main">
         <div class="main__container">
           <h1 class="main__title">Услуги и сервисы</h1>
-          <div class="main__big-size">
+          <div class="main__additional">
             <a href="#" class="main__repair margin">Оставить заявку</a>
             <a href="#" class="main__check margin">Статус ремонта</a>
           </div>
@@ -93,7 +97,6 @@
             class="main__img"
           />
         </div>
-        <h2 class="main__title second">Услуги и сервисы</h2>
       </main>
     </div>
   </body>

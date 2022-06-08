@@ -1,20 +1,20 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url(../fonts/TTLakes-Regular.woff), local("TTLakes-Regular");
-  font-weight: normal;
+  src: local("TT Lakes"), url("../fonts/TTLakes-Regular.woff");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes bold";
-  src: url(../fonts/TTLakes-Bold.woff), local("TTLakes-Bold");
-  font-weight: bold;
+  src: url("../fonts/TTLakes-Bold.woff"), local("TTLakes-Bold");
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes Medium";
-  src: url(../fonts/TTLakes-Medium.woff), local("TTLakes-Medium");
+  src: url("../fonts/TTLakes-Medium.woff"), local("TTLakes-Medium");
   font-weight: bold;
   font-style: normal;
 }
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "TT Lakes";
+  font-family: "TT Lakes", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -48,15 +48,14 @@ body {
   overflow: hidden;
 }
 .container {
-  width: 320px;
   margin: 0 auto;
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
+  justify-content: space-between;
   height: 88px;
+  padding: 0 16px;
 
   background-color: #ffffff;
 }
@@ -89,11 +88,11 @@ body {
   background-color: #f8f8f8;
   padding-top: 1px;
 }
-.main__big-size {
+.main__additional {
   display: none;
   align-items: center;
 
-  font-family: "TT Lakes Medium";
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -120,8 +119,8 @@ body {
   right: -50px;
 }
 .main__title {
+  font-family: "TT Lakes bold", "Arial", sans-serif;
   font-size: 28px;
-  font-weight: bold;
   line-height: 40px;
 
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -144,6 +143,10 @@ body {
 .slide-menu {
   display: flex;
   overflow-x: auto;
+
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .slide-menu::-webkit-scrollbar {
@@ -151,10 +154,10 @@ body {
 }
 
 .slide-menu__items {
-  padding: 8px 15px;
+  padding: 8px 16px;
   white-space: nowrap;
 
-  font-family: "TT Lakes Medium";
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #7e7e82;
@@ -171,7 +174,7 @@ body {
 .main__about {
   overflow: hidden;
   padding-left: 20px;
-  padding-right: 5px;
+  padding-right: 6px;
 }
 .main__article {
   height: 90px;
@@ -179,15 +182,17 @@ body {
   margin-bottom: 16px;
 
   line-height: 20px;
+  flex-grow: 1;
+}
+.main-text {
+  line-height: 20px;
 }
 
 .main__btn {
   background: none;
   border: none;
-  /* align-self: start; */
-  margin-bottom: 16px;
 
-  font-family: "TT Lakes Medium";
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #1b1c21;
@@ -195,25 +200,25 @@ body {
 .main__btn::before {
   content: url(../img/expand.svg);
   vertical-align: middle;
-  /* margin-left: 8px; */
 }
 .main__img {
   width: 100%;
+  flex-grow: 1;
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 769px;
-  }
   .header {
     justify-content: space-between;
-    padding: 0 25px;
+    padding: 0 24px;
   }
   .additional {
     display: flex;
-    border-right: 2px solid #eaeaea;
+
+    font-family: "TT Lakes Medium", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
   }
-  .header__btn::after {
+  .burger::after {
     content: "";
     display: inline-block;
     margin-right: 15px;
@@ -227,14 +232,11 @@ body {
   .repair {
     margin-left: 15px;
   }
-  .repair::before {
-    display: none;
-  }
   .main__title {
-    visibility: hidden;
+    text-shadow: none;
   }
   .main__article {
-    height: 150px;
+    height: 170px;
   }
   .main__text {
     width: 310px;
@@ -247,29 +249,21 @@ body {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 30px;
-    padding-right: 25px;
-  }
-  .second {
-    display: block;
-    visibility: visible;
+    padding-right: 24px;
   }
 }
 
 @media (min-width: 1120px) {
-  .container {
-    width: 1120px;
-  }
   .header {
     display: none;
   }
   .main__title {
-    visibility: visible;
+    text-shadow: none;
   }
   .second {
     display: none;
   }
-  .main__big-size {
+  .main__additional {
     display: flex;
   }
   .slide-menu {
