@@ -26,6 +26,12 @@
 a {
   text-decoration: none;
 }
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "TT Lakes", "Arial", sans-serif;
   font-size: 14px;
@@ -67,7 +73,7 @@ body {
   display: none;
   margin-left: auto;
 }
-.header__btn {
+.btn {
   border: none;
   background: none;
 }
@@ -136,10 +142,6 @@ body {
   margin-right: 12px;
 }
 
-.second {
-  display: none;
-}
-
 .slide-menu {
   display: flex;
   overflow-x: auto;
@@ -152,16 +154,15 @@ body {
 .slide-menu::-webkit-scrollbar {
   display: none;
 }
-
+.slide-menu__list {
+  padding: 16px 0;
+}
 .slide-menu__items {
+  display: block;
   padding: 8px 16px;
   white-space: nowrap;
 
-  font-family: "TT Lakes Medium", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7e7e82;
-
+  color: #1b1c21;
   border: 2px solid transparent;
   border-radius: 6px;
 }
