@@ -1,0 +1,103 @@
+/* Оформляем слайдер */
+.brand {
+  height: 234px;
+  background-color: #f8f8f8;
+}
+
+.brand__header {
+  display: inline-block;
+  padding: 16px;
+  width: 100%;
+  vertical-align: middle;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7e82;
+
+  border-top: 2px solid #d9fff5;
+  background-color: #fff;
+}
+.swiper-wrapper {
+  display: flex;
+  height: 140px;
+  padding-left: 32px;
+
+  background-color: #f8f8f8;
+}
+.swiper-slide {
+  display: inline-block;
+  position: relative;
+  padding: 16px;
+  width: 224px;
+  height: 72px;
+
+  background-color: #fff;
+}
+.swiper-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 16px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+
+  background-image: url("/img/logo/go.svg");
+}
+.swiper-slide > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 128px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.brand__btn {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .swiper-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 16px;
+    overflow: hidden;
+  }
+  .swipper-slide {
+    margin-right: 40px;
+    overflow: hidden;
+    height: 180px;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .brand__btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .closed {
+    height: 175px;
+  }
+  .show {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .brand {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1120px) {
+  .brand {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}

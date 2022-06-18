@@ -141,7 +141,6 @@ body {
   border-radius: 0 4px 4px 0;
   margin-right: 12px;
 }
-
 .slide-menu {
   display: flex;
   overflow-x: auto;
@@ -189,8 +188,8 @@ body {
   line-height: 20px;
 }
 
-.main__btn {
-  background: none;
+.show-btn {
+  background: inherit;
   border: none;
 
   font-family: "TT Lakes Medium", "Arial", sans-serif;
@@ -198,15 +197,23 @@ body {
   line-height: 24px;
   color: #1b1c21;
 }
-.main__btn::before {
+.brand__btn {
+  padding: 20px;
+}
+.expand::before {
   content: url(../img/expand.svg);
-  vertical-align: middle;
+  vertical-align: top;
+}
+.back::before {
+  content: url(../img/closed.svg);
+  vertical-align: top;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .main__img {
   width: 100%;
   flex-grow: 1;
 }
-
 @media (min-width: 768px) {
   .header {
     justify-content: space-between;
@@ -255,6 +262,9 @@ body {
 }
 
 @media (min-width: 1120px) {
+  .container {
+    max-width: 1120px;
+  }
   .header {
     display: none;
   }
